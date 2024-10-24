@@ -9,6 +9,9 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
 }
 
 #quiz-container {
@@ -63,6 +66,51 @@ h2 {
 .points-animate {
     opacity: 1;
     transform: translateY(-20px);
+}
+
+.end-screen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use full viewport height */
+    box-sizing: border-box;
+    padding: 20px; /* Adjust to add some space around content */
+}
+
+.end-screen h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Button Styling */
+.end-screen button {
+    margin: 20px 0; /* Adds vertical space around the button */
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.end-screen button:hover {
+    background-color: #45a049;
+}
+
+/* Leaderboard Styling */
+#leaderboard-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px; /* Adds space between the button and leaderboard */
+}
+
+#leaderboard-list li {
+    background-color: #1f1f1f;
+    margin: 10px 0; /* Space between each leaderboard entry */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #leaderboard {
