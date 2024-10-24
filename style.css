@@ -15,9 +15,13 @@ body {
 }
 
 #quiz-container {
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 button {
@@ -25,7 +29,7 @@ button {
     color: #f5f5f5;
     border: none;
     padding: 30px 110px; /* Increased padding for larger buttons */
-    font-size: 1.5rem;   /* Increased font size for better readability */
+    font-size: 2.5vw;   /* Increased font size for better readability */
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 8px;
@@ -38,10 +42,18 @@ button:hover {
 
 #options-container button {
     display: block;
-    justify-content: center;
     width: 100%;
-    margin: 10px 0; /* Increased margin for more space between options */
+    margin: 10px 0;
+    padding: 2vw; /* Responsive padding */
+    font-size: 2vw; /* Responsive font size for options */
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
+
 
 .correct {
     background-color: #4CAF50 !important;
