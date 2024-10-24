@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="quiz-container">
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h1>Bem vindo ao quiz da amostra multidisciplinar!</h1>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+        
+        <!-- Question Screen -->
+        <div id="question-screen" style="display: none;">
+            <h2 id="question-title"></h2>
+            <div id="options-container"></div>
+            <p id="points-earned" class="points-animation"></p>
+        </div>
+        
+        <div id="text-question" style="display: none;">
+            <h2>Final Question</h2>
+            <input type="text" id="text-answer" placeholder="Type your answer here" />
+            <button id="lastbutton" onclick="submitTextAnswer()">Submit</button>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" style="display: none;">
+            <h2>Quiz Completado!</h2>
+            <p>Sua pontuação final é: <span id="final-score"></span></p>
+            <p>Você completou o quiz em: <span id="final-time"></span></p>
+            <p><span id="final-message"></span></p>
+            
+            <button onclick="restartQuiz()">Tente novamente</button>
+        </div>
+
+        <div id="leaderboard" style="display: none;">
+            <h2>Placar dos seus melhores tempos</h2>
+            <ul id="leaderboard-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

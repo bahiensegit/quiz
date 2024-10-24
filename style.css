@@ -1,0 +1,148 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+}
+
+#quiz-container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+button {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    border: none;
+    padding: 30px 110px; /* Increased padding for larger buttons */
+    font-size: 1.5rem;   /* Increased font size for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+
+#options-container button {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0; /* Increased margin for more space between options */
+}
+
+.correct {
+    background-color: #4CAF50 !important;
+}
+
+.wrong {
+    background-color: #af4c4c !important;
+}
+
+.points-animation {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* Animations */
+.points-animate {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+#leaderboard {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#leaderboard ul {
+    list-style: none;
+    padding: 0;
+}
+
+#leaderboard li {
+    background-color: #1f1f1f;
+    padding: 30px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+
+/* Centering the entire text input container */
+#text-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Take the full viewport height */
+    width: 100%;
+}
+
+/* Large Text Box Styling */
+#text-answer {
+    width: 90%; /* Adjust width to make it fit nicely */
+    max-width: 600px; /* Maximum width to avoid being too large on wide screens */
+    height: 400px; /* Height of the text box */
+    font-size: 1.5rem;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+#text-answer:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Submit Button Styling */
+#text-input-container button {
+    font-size: 1.2rem;
+    padding: 15px 50px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#text-input-container button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 600px) {
+    #text-answer {
+        font-size: 1.2rem;
+        height: 150px;
+        padding: 10px;
+    }
+
+    #text-input-container button {
+        font-size: 1rem;
+        padding: 10px 30px;
+    }
+
+    body {
+        padding: 5px;
+    }
+}
