@@ -1,20 +1,79 @@
 let questions = [
     {
-        "title": "What is the capital of France?",
-        "options": ["Berlin", "London", "Paris", "Rome"],
+        "title": "O que são as pessoas chamadas de Boat People?",
+        "options": [
+            "Vietnamitas que navegam em lanchas em busca de novas explorações e territórios.",
+            "Refugiados que fogem do país a partir de barcos, e estes são muito pequenos comparado ao grande número de pessoas que navegam nele.",
+            "São trabalhadores que migram temporariamente para países europeus para trabalhar em indústrias pesadas.",
+            "Turistas que navegam em iates e barcos de luxo."
+        ],
         "correctOptionIndex": 2,
         "points": 10
     },
     {
-        "title": "What is 2 + 2?",
-        "options": ["3", "4", "5", "6"],
+        "title": "Quem venceu a guerra do Vietnã",
+        "options": [
+            "Vietnã do Norte",
+            "Hanoi",
+            "Palestina",
+            "Vietnã do Sul"
+        ],
         "correctOptionIndex": 1,
         "points": 10
     },
     {
-        "title": "Which planet is known as the Red Planet?",
-        "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+        "title": "Qual urso é um urso típico do Vietnã?",
+        "options": [
+            "Urso-Malaio",
+            "Urso panda",
+            "Urso marrom",
+            "Urso polar"
+        ],
         "correctOptionIndex": 1,
+        "points": 10
+    },
+    {
+        "title": "Quais aspectos ambientais e sociais são destacados pela guia sobre Hanói?",
+        "options": [
+            "A grande biodiversidade no país e as arquiteturas francesas do país.",
+            "A predominância de áreas urbanas e industriais.",
+            "A economia centrada no setor de tecnologia.",
+            "A ausência de florestas tropicais na região."
+        ],
+        "correctOptionIndex": 1,
+        "points": 10
+    },
+    {
+        "title": "Qual desses é um prato típico do Vietnã",
+        "options": [
+            "Lagosta Frita",
+            "Mapo tofu",
+            "Rolinho primavera",
+            "Tian Bu la"
+        ],
+        "correctOptionIndex": 3,
+        "points": 10
+    },
+    {
+        "title": "O que ajudou a vitória do lado Norte do vietnã",
+        "options": [
+            "Tecnologia militar avançada.",
+            "Apoio financeiro dos EUA.",
+            "Superiores táticas marítimas.",
+            "Melhor adaptação ao terreno e clima."
+        ],
+        "correctOptionIndex": 4,
+        "points": 10
+    },
+    {
+        "title": "Qual ideologia política o lado Norte do Vietnã apoiava.",
+        "options": [
+            "Capitalismo.",
+            "Liberalismo.",
+            "Comunismo.",
+            "Monarquia."
+        ],
+        "correctOptionIndex": 3,
         "points": 10
     }
 ];
