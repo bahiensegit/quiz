@@ -119,7 +119,8 @@ function checkAnswer(selectedIndex) {
     const options = document.getElementById('options-container').children;
     const pointsEarned = document.getElementById('points-earned');
 
-    if (selectedIndex === question.correctOptionIndex) {
+
+    if (selectedIndex + 1 == question.correctOptionIndex) {
         options[selectedIndex].classList.add('correct');
         score += question.points;
         pointsEarned.innerText = `+${question.points} points`;
